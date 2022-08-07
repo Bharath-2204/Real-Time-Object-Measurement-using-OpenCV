@@ -105,11 +105,14 @@ def live():
 
 
         def measure(): 
+         try:
             _, ima = vid.read()
-            FRAME_WINDOW.image(ima)                         #Displaying the live video
-            if check1:                  
+            FRAME_WINDOW.image(ima)        
+         except:
+            pass
+         if check1:                  
                     getcontours(ima,showCanny=True) 
-            elif check2:
+         elif check2:
                     getcircles(ima)
         
             
