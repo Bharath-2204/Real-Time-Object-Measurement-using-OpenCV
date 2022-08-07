@@ -72,7 +72,7 @@ if options == 'Real':
                 st.markdown("###### URL format : http://your_ip_address:8080/video")
                 st.markdown("###### Example URL : http://192.168.25.243:8080/video")
         elif op == 'External Webcam':
-                vid = cv2.VideoCapture(0)
+                vid = cv2.VideoCapture(-1)
         opt = st.radio("",('Start','Pause'))
             #sto = st.button("Stop")
             
