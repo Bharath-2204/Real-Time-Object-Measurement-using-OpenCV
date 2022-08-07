@@ -25,9 +25,7 @@ def live():
             check1 = st.button("Rectangle/Square")
         with col2:
             check2 = st.button("Circle")
-        like = st.slider('How satisfied are you with the measurements?', 0, 10, 0)
-        if like >=5:
-            st.balloons()
+        
         Frame = st.image([])
         circleframe = st.image([])
         FRAME_WINDOW = st.image([])
