@@ -3,7 +3,14 @@ import streamlit as st
 from annotated_text import annotated_text
 from final_rtom import *
 from badacc import *
-
+st.write('<style>.css-1yjuwjr{font-size:22px;}', unsafe_allow_html=True)
+st.write('<style>.st-af{font-size:1.2rem;}', unsafe_allow_html=True)
+st.write('<style>.st-cw{height:1.6rem;}', unsafe_allow_html=True)
+st.write('<style>.st-d2{width:1.6rem;}', unsafe_allow_html=True)
+st.write('<style>.st-d6{height:8px;}', unsafe_allow_html=True)
+st.write('<style>.st-d7{width:8px;}', unsafe_allow_html=True)
+st.write('<style>code{font-size:1.1em;}', unsafe_allow_html=True)
+st.write('<style>p{font-size:1.2rem;}', unsafe_allow_html=True)
 st.title("Real Time Object Measurement")
 annotated_text(("open","CV","#269e98"),("with","python","#d16c06"),)
 
@@ -73,11 +80,4 @@ elif options == 'Static':
     
     static()
     
-st.write('<style>.css-1yjuwjr{font-size:22px;}', unsafe_allow_html=True)
-st.write('<style>.st-af{font-size:1.2rem;}', unsafe_allow_html=True)
-st.write('<style>.st-cw{height:1.6rem;}', unsafe_allow_html=True)
-st.write('<style>.st-d2{width:1.6rem;}', unsafe_allow_html=True)
-st.write('<style>.st-d6{height:8px;}', unsafe_allow_html=True)
-st.write('<style>.st-d7{width:8px;}', unsafe_allow_html=True)
-st.write('<style>code{font-size:1.1em;}', unsafe_allow_html=True)
-st.write('<style>p{font-size:1.2rem;}', unsafe_allow_html=True)
+
