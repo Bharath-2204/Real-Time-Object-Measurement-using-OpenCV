@@ -11,7 +11,7 @@ from final_rtom import *
 from badacc import *
 from annotated_text import annotated_text
 
-        
+FRAME_WINDOW = st.image([])         
 
 st.title("Real Time Object Measurement")
 annotated_text(("open","CV","#269e98"),("with","python","#d16c06"),)
@@ -85,7 +85,7 @@ if options == 'Real':
         like = st.slider('How satisfied are you with the measurements?', 0, 10, 0)
         if like >=5:
                 st.balloons()
-        FRAME_WINDOW = st.image([]) 
+        
         
             
         if opt == 'Start':
