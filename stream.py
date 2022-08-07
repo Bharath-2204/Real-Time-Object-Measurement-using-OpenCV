@@ -1,5 +1,6 @@
 
 import streamlit as st
+from annotated_text import annotated_text
 
 st.title("Real Time Object Measurement")
 annotated_text(("open","CV","#269e98"),("with","python","#d16c06"),)
