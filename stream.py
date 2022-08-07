@@ -52,10 +52,7 @@ if options == 'Real':
                                 file_name="Aruco_marker.pdf",
                                 mime='application/octet-stream')
         st.markdown('##')
-        
-            
-       
-        live()
+    live()
     
 elif options == 'Static':
    
