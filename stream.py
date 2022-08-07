@@ -54,10 +54,9 @@ if options == 'Real':
         st.markdown('##')
         
             
-    try:    
+       
         live()
-    except:
-        pass
+    
 elif options == 'Static':
    
     st.subheader("This app also allows you to measure static objects !")
