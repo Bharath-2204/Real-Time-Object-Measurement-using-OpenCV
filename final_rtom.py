@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 
 def live():
-    try:
+   
         #cap = cv2.VideoCapture('http://192.168.25.243:8080/video')
         para = cv2.aruco.DetectorParameters_create()
         aru_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_6X6_100)    #aruco dictionary
@@ -119,8 +119,7 @@ def live():
                 if opt == 'Stop':
                     break 
         
-    except:
-        pass       
+        
             
        
 
