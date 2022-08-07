@@ -70,7 +70,9 @@ elif options == 'Static':
         if satisfied:
             st.snow()
             st.write('Thanks :)')
-    
-    static()
+    try:        
+        static()
+    except:
+        pass
     
 
