@@ -70,10 +70,9 @@ elif options == 'Static':
         if satisfied:
             st.snow()
             st.write('Thanks :)')
-    try:
-        static()
-    except:
-        pass
+    
+    static()
+    
 st.write('<style>.css-1yjuwjr{font-size:22px;}', unsafe_allow_html=True)
 st.write('<style>.st-af{font-size:1.2rem;}', unsafe_allow_html=True)
 st.write('<style>.st-cw{height:1.6rem;}', unsafe_allow_html=True)
