@@ -10,9 +10,23 @@ from scipy.spatial import distance as dist
 from final_rtom import *
 from badacc import *
 from annotated_text import annotated_text
-
+import av
+from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 FRAME_WINDOW = st.image([])         
-
+class VideoCapture:
+    def recv(self, frame):
+        img = frame.to_ndarray(format="bgr24")
+        
+        return av.VideoFrame.from_ndarray(img, format="bgr24")
+    
+webrtc_streamer(
+    key="TEST",
+    mode=WebRtcMode.SENDRECV,
+    rtc_configuration=RTCConfiguration({"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}),
+    media_stream_constraints={"video": True, "audio": False},
+    video_processor_factory=VideoCapture,
+    async_processing=True,
+)
 st.title("Real Time Object Measurement")
 annotated_text(("open","CV","#269e98"),("with","python","#d16c06"),)
 
