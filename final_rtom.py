@@ -2,6 +2,8 @@ import numpy as np
 import cv2
 import streamlit as st
 from PIL import Image
+import av
+from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 try:
   class VideoCapture:
     def recv(self, frame):
